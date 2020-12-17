@@ -1,0 +1,22 @@
+
+spring:
+  datasource:
+    name: sell  #数据库名
+    url: jdbc:mysql://localhost:3306/sell?characterEncoding=utf-8&useSSL=false #url
+    username: root  #用户名
+    password: 123456  #密码
+    driver-class-name: com.mysql.jdbc.Driver  #数据库链接驱动
+  jpa:
+    show-sql: true
+
+
+#  mybatis:
+#    mapper-locations: classpath:mapper/*.xml  #配置映射文件
+#    type-aliases-package: com.trip.demo.bean #配置实体类
+
+logging:
+  pattern:
+    console: "%d - %msg%n"
+  file:
+    path: d:/Download/log/
+  level: debug
